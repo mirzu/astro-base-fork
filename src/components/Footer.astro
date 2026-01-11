@@ -5,18 +5,19 @@ import { Icon } from "astro-icon/components";
 <footer
   id="contact"
   class="w-full py-12 px-4 border-t border-gray-200 bg-white"
+  role="contentinfo"
 >
   <div class="max-w-6xl mx-auto">
     <div class="grid md:grid-cols-3 gap-8 mb-8">
       <div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-4">Astro Base</h3>
+        <h2 class="text-lg font-semibold text-gray-900 mb-4">Astro Base</h2>
         <p class="text-gray-600">
           A basic minimal starter template built for Astro with React, Framer
           Motion and Tailwind.
         </p>
       </div>
       <div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-4">Links</h3>
+        <h2 class="text-lg font-semibold text-gray-900 mb-4">Links</h2>
         <ul class="space-y-2">
           <li>
             <a
@@ -42,24 +43,30 @@ import { Icon } from "astro-icon/components";
         </ul>
       </div>
       <div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-4">Connect</h3>
+        <h2 class="text-lg font-semibold text-gray-900 mb-4">Connect</h2>
         <ul class="space-y-2">
           <li>
             <a
               href="https://github.com"
               class="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit our GitHub (opens in new tab)"
             >
-              <Icon name="tabler:brand-github" class="w-5 h-5" />
-              GitHub</a
+              <Icon name="tabler:brand-github" class="w-5 h-5" aria-hidden="true" />
+              <span>GitHub</span></a
             >
           </li>
           <li>
             <a
               href="https://twitter.com"
               class="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow us on Twitter (opens in new tab)"
             >
-              <Icon name="tabler:brand-twitter" class="w-5 h-5" />
-              Twitter</a
+              <Icon name="tabler:brand-twitter" class="w-5 h-5" aria-hidden="true" />
+              <span>Twitter</span></a
             >
           </li>
           <li>
@@ -67,15 +74,15 @@ import { Icon } from "astro-icon/components";
               href="/contact"
               class="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
             >
-              <Icon name="tabler:mail" class="w-5 h-5" />
-              Email</a
+              <Icon name="tabler:mail" class="w-5 h-5" aria-hidden="true" />
+              <span>Email</span></a
             >
           </li>
         </ul>
       </div>
     </div>
     <div class="pt-8 border-t border-gray-200 text-center text-gray-600">
-      <p>&copy; 2024 Astro Base. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} Astro Base. All rights reserved.</p>
     </div>
   </div>
 </footer>
