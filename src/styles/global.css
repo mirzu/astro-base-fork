@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@theme {
+  --font-logo: "Great Vibes", cursive;
+}
+
 /* Accessibility: Skip to content link */
 .sr-only {
   position: absolute;
