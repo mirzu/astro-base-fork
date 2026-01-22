@@ -2,7 +2,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "never"
   },
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
@@ -26,5 +26,9 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "files.associations": {
     "*.astro": "astro"
+  },
+  "eslint.codeActionsOnSave.rules": null,
+  "eslint.codeActionsOnSave.options": {
+
   }
 }
