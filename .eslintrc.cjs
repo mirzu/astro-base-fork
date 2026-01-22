@@ -22,6 +22,7 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "react"],
   rules: {
+    "react/no-unknown-property": 'off',
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "@typescript-eslint/no-unused-vars": [
