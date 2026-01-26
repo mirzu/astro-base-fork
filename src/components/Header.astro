@@ -15,7 +15,7 @@ import { Icon } from "astro-icon/components";
       class="text-3xl font-logo text-gray-900 hover:text-gray-700 transition-colors"
       aria-label="Astro Base - Home"
     >
-      Astro Base
+      mirzu.com
     </a>
     
     <!-- Mobile menu button -->
@@ -32,6 +32,15 @@ import { Icon } from "astro-icon/components";
 
     <!-- Desktop navigation -->
     <ul class="hidden md:flex items-center gap-6" role="list">
+      <li>
+        <a
+          href="/resume"
+          class="text-gray-600 hover:text-gray-900 transition-colors"
+          aria-current={Astro.url.pathname === '/resume' ? 'page' : undefined}
+        >
+          Resume
+        </a>
+      </li>
       <li>
         <a
           href="/features"
